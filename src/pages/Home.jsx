@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useAuth } from "../components/utils/Auth";
 import Introduction from "../components/home/Introduction";
 import TopCarousel from "../components/home/TopCarousel";
+import BottomSignUp from "../components/home/BottomSignUp";
 
 export default function Home(){
     const nav = useNavigate();
@@ -24,6 +25,7 @@ export default function Home(){
             </div>
             {/** bottom */}
             <Introduction />
+            <BottomSignUp />
         </div>
     )
 }
