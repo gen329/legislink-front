@@ -1,7 +1,7 @@
 import axios from "axios";
 const serverURL = import.meta.env.VITE_BASE_URL;
 const propublicaAPIKey = import.meta.env.VITE_BASE_PROPUBLICA_KEY;
-const civicAPIKey ="AIzaSyDB7oHyQh8GsDnbRF3HLO-8CF2AONL4vQM"
+const civicAPIKey = import.meta.env.VITE_BASE_CIVIC_KEY;
 /**
  * ToDo : need to check routers.
  */
