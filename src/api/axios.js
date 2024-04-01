@@ -68,7 +68,7 @@ export async function fetchForSenate(){
 
 export async function fetchPolls(address) {
     try {
-        const response = await axios.get(`https://www.googleapis.com/civicinfo/v2/voterinfo?key=AIzaSyDB7oHyQh8GsDnbRF3HLO-8CF2AONL4vQM&address=1263 Pacific Ave. Kansas City KS&electionId=2000`, {
+        const response = await axios.get(`https://civicinfo/v2/voterinfo?key=AIzaSyDB7oHyQh8GsDnbRF3HLO-8CF2AONL4vQM&address=1263 Pacific Ave. Kansas City KS&electionId=2000`, {
             headers: {
                 'X-API-Key': `${civicAPIKey}`,
             },
