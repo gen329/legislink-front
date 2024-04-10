@@ -9,6 +9,7 @@ import { faThumbsUp, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import MyDistrict from "../components/MyDistrict.jsx";
 import TodayStatements from "../components/TodayStatements.jsx";
 import axios from "axios";
+import TodayVoteHouse from "../components/TodayVoteHouse.jsx";
 
 const serverURL = import.meta.env.VITE_BASE_URL;
 
@@ -75,6 +76,7 @@ export default function TestLobby() {
         <h2>Current Bills</h2>
         {preferences.myDistrict ? (<MyDistrict />): null}
         {preferences.statement ?(<TodayStatements />):null}
+        <TodayVoteHouse />
         <div className="bill-cards">
           {bills.map((bill) => (
             <div
